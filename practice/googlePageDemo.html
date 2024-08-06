@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Page Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css"
+        integrity="sha512-EJp8vMVhYl7tBFE2rgNGb//drnr1+6XKMvTyamMS34YwOEFohhWkGq13tPWnK0FbjSS6D8YoA3n3bZmb3KiUYA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .main{
+            height: 100vh;
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sub {
+            height: 400px;
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .search-container {
+            position: relative;
+            width: 300px;
+            border-radius: 50px;
+            margin-bottom: 20px;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 10px;
+            padding-left: 40px;
+            border-radius: 25px;
+            border: 1px solid #ccc;
+            /* Add padding to make space for the icon */
+            box-sizing: border-box;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #aaa;
+        }
+
+        .fa-solid {
+            position: absolute;
+            color: #aaa;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 30px;
+
+        }
+
+        .fa-qrcode {
+            position: absolute;
+            color: #aaa;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 10px;
+        }
+
+        .icons {
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 30px;
+
+        }
+
+        .icons>div {
+            height: 50px;
+            width: 70px;
+            font-size: 15px;
+            border: 1px solid white;
+            white-space: nowrap;
+            /* Prevents text from wrapping to the next line */
+            overflow: hidden;
+            /* Hides the overflowing text */
+            text-overflow: ellipsis;
+            /* Adds the ellipsis (...) */
+            padding: 10px;
+            /* Optional: adds padding for better presentation */
+            box-sizing: border-box;
+            /* Ensures padding and border are included in the width */
+        }
+
+        .icons2 {
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            gap: 8px;
+        }
+
+        .icons2>div {
+            height: 50px;
+            width: 70px;
+            font-size: 15px;
+            border: 1px solid white;
+            white-space: nowrap;
+            /* Prevents text from wrapping to the next line */
+            overflow: hidden;
+            /* Hides the overflowing text */
+            text-overflow: ellipsis;
+            /* Adds the ellipsis (...) */
+            padding: 10px;
+            /* Optional: adds padding for better presentation */
+            box-sizing: border-box;
+            /* Ensures padding and border are included in the width */
+
+        }
+
+        .icons>div {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .icons2>div {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="sub">
+            <form action="">
+                <div align="center">
+                    <img src="Google_2015_logo.svg.png" alt="" height="100px" width="250px">
+                </div>
+                <div class="search-container">
+                    <input type="text" placeholder="Search Google or type a URL" class="search-input">
+                    <i class="fas fa-search search-icon"></i>
+                    <i class="fa-solid fa-microphone"></i>
+                    <i class="fas fa-qrcode"></i>
+                </div>
+                <div class="icons">
+                        <div class="sub-icons1"><i class="fab fa-github"></i><br>GitHub</div>
+                    <div class="sub-icons2"><i class="fas fa-sms"></i><br>sms</div>
+                    <div class="sub-icons3"><i class="fas fa-shopping-cart"></i><br>Web Store</div>
+                    <div class="sub-icons4"><i class="fa fa-envelope" aria-hidden="true"></i><br>Email</div>
+                </div>
+                <div class="icons2">
+                    <div class="child1"><i class="fa-brands fa-youtube"></i><br>YouTube</div>
+                    <div class="child2"><i class="fa-brands fa-amazon"></i><br>Amazon</div>
+                    <div class="child3"><i class="fa-brands fa-instagram"></i><br>Insta</div>
+                    <div class="child4"><i class="fas fa-plus"></i><br>Add shotcut</div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
